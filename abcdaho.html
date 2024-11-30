@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.html">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+            color: #555;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        .rating {
+            display: flex;
+            gap: 5px;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            font-size: 20px;
+            cursor: pointer;
+        }
+        .rating input:checked ~ label {
+            color: gold;
+        }
+        .rating label:hover,
+        .rating label:hover ~ label {
+            color: gold;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .required {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1 >Feedback Form</h1>
+        <form action="#" method="POST">
+            
+      
+            <div class="form-group">
+                <label for="overallExperience">Overall Experience <span class="required">*</span></label>
+                <div class="rating">
+                    <input type="radio" id="experience1" name="overallExperience" value="1" required>
+                    <label for="experience1">★</label>
+                    <input type="radio" id="experience2" name="overallExperience" value="2">
+                    <label for="experience2">★</label>
+                    <input type="radio" id="experience3" name="overallExperience" value="3">
+                    <label for="experience3">★</label>
+                    <input type="radio" id="experience4" name="overallExperience" value="4">
+                    <label for="experience4">★</label>
+                    <input type="radio" id="experience5" name="overallExperience" value="5">
+                    <label for="experience5">★</label>
+                </div>
+            </div>
+
+            
+            <div class="form-group">
+                <label for="navigation">How easy was it to find what you were looking for?</label>
+                <select id="navigation" name="navigation">
+                    <option value="veryEasy">Very Easy</option>
+                    <option value="easy">Easy</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="difficult">Difficult</option>
+                    <option value="veryDifficult">Very Difficult</option>
+                </select>
+            </div>
+
+         
+            <div class="form-group">
+                <label for="contentQuality">How would you rate the quality of the food menu descriptions, photos, and recipes?</label>
+                <select id="contentQuality" name="contentQuality">
+                    <option value="excellent">Excellent</option>
+                    <option value="good">Good</option>
+                    <option value="average">Average</option>
+                    <option value="poor">Poor</option>
+                    <option value="veryPoor">Very Poor</option>
+                </select>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="designAppeal">How visually appealing is the website design?</label>
+                <select id="designAppeal" name="designAppeal">
+                    <option value="veryAttractive">Very Attractive</option>
+                    <option value="attractive">Attractive</option>
+                    <option value="neutral">Neutral</option>
+                    <option value="unattractive">Unattractive</option>
+                    <option value="veryUnattractive">Very Unattractive</option>
+                </select>
+            </div>
+
+        
+            <div class="form-group">
+                <label for="speed">How would you rate the website’s speed and performance?</label>
+                <select id="speed" name="speed">
+                    <option value="veryFast">Very Fast</option>
+                    <option value="fast">Fast</option>
+                    <option value="average">Average</option>
+                    <option value="slow">Slow</option>
+                    <option value="verySlow">Very Slow</option>
+                </select>
+            </div>
+
+           
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" placeholder="Please share any other feedback or suggestions." rows="4"></textarea>
+            </div>
+
+           
+            <div class="form-group">
+                <button type="submit"><a href="AFTERFEED.HTML">Submit Feedback</a></button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>

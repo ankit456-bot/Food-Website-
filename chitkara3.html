@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitkara University</title>
+    <!-- Google Fonts for stylish fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <style>
+        /* Reset and general styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            height: 100vh;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Hero Section Styling */
+        .hero {
+            position: relative;
+            height: 100vh;
+            background: url(background2.jpeg) no-repeat center center fixed; /* Background image */
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            z-index: 1;
+            overflow: hidden;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        .hero-text {
+            z-index: 1;
+            font-size: 4rem;
+            font-weight: 700;
+            line-height: 1.2;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-family: 'Playfair Display', serif;
+            opacity: 0;
+            animation: slideInFromTop 1s 1s forwards;
+            text-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8);
+            color: black;
+        }
+
+        .subheading {
+            font-size: 2rem;
+            margin-top: 20px;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 300;
+            opacity: 0;
+            animation: fadeInText 2s 1.5s forwards;
+            letter-spacing: 2px;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+            color: red;
+        }
+
+        .highlight {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #ffffff;
+            text-transform: uppercase;
+            opacity: 0;
+            font-family: 'Playfair Display', serif;
+            animation: fadeInText 2s 2s forwards;
+            
+        }
+
+        /* Keyframe Animations */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInFromTop {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero-text {
+                font-size: 2.5rem;
+                letter-spacing: 3px;
+            }
+
+            .subheading {
+                font-size: 1.8rem;
+            }
+
+            .highlight {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">Chitkara University</div>
+        <div class="subheading">Presents</div>
+        <div class="highlight">Fresh Feast</div>
+    </div>
+
+    <!-- JavaScript to handle the redirect -->
+    <script>
+        // Redirect to the next page after the animation
+        window.onload = function() {
+            setTimeout(function() {
+                // Redirect to a different HTML page (replace 'nextpage.html' with your actual page URL)
+                window.location.href = 'chitkara.html';
+            }, 5000); // Adjust the time (5000ms = 5 seconds) to match the duration of your animation
+        };
+    </script>
+</body>
+</html>

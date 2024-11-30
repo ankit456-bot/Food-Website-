@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Fresh Feast</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Global Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover,
+        nav ul li a.active {
+            color: #e6d35f;
+        }
+
+        #about-us {
+            padding: 50px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        #about-us h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        #about-us p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .team-container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .team-member {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            width: 22%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative;
+            opacity: 0;
+            transform: translateY(100px);
+            animation: popIn 1s forwards; /* Slowed down animation duration */
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .team-member:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .team-member:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+
+        .team-member:nth-child(4) {
+            animation-delay: 0.8s;
+        }
+
+        @keyframes popIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .team-photo {
+            width: 180px; /* Increased size */
+            height: 180px; /* Increased size */
+            border-radius: 10%;
+            margin: 0 auto 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .team-member:hover .team-photo {
+            transform: scale(1.1);
+        }
+
+        .team-description h2 {
+            font-size: 22px;
+            margin: 15px 0 5px;
+            color: #0b0a0a;
+            font-family: 'Playfair Display'
+        }
+
+        .team-description p {
+            font-size: 16px;
+            color: #555;
+            color: #000000;
+            font-family: 'Playfair Display'
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Playfair Display', serif;color: #ffd700;">FRESH FEAST - Enjoy the Taste</h1>
+        <nav>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="about.html" class="active">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="about-us">
+            <h1>Meet the Fresh Feast Team</h1>
+            <p>We are a group of passionate individuals, dedicated to bringing the freshest and most delicious meals to your table. Let us introduce ourselves!</p>
+            
+            <div class="team-container">
+                <!-- Co-founder 1 -->
+                <div class="team-member">
+                    <img src="meri.jpg" alt="Co-Founder 1" class="team-photo" />
+                    <div class="team-description">
+                        <h2>Ansh Chawla</h2>
+                        <p>Co-Founder & CEO</p>
+                        <p>As the CEO and Co-Founder of Fresh Feast, I’m passionate about delivering fresh, delicious meals to our customers. I oversee the daily operations, guide our team, and focus on maintaining high standards of quality. My goal is to ensure that every dining experience is exceptional and that we continue to grow as a trusted food outlet in the community.</p>
+                    </div>
+                </div>
+                
+                <!-- Co-founder 2 -->
+                <div class="team-member">
+                    <img src="ankit.jpg" alt="Co-Founder 2" class="team-photo" />
+                    <div class="team-description">
+                        <h2>Ankit Sharema</h2>
+                        <p>Co-Founder & Operations Lead</p>
+                        <p>With a background in restaurant management, Ankit ensures that every meal is crafted with precision and delivered with the highest quality standards. His focus is on smooth operations and customer satisfaction.</p>
+                    </div>
+                </div>
+                
+                <!-- Co-founder 3 -->
+                <div class="team-member">
+                    <img src="abhay1.jpg" alt="Co-Founder 3" class="team-photo" />
+                    <div class="team-description">
+                        <h2>Abhay Kaushal</h2>
+                        <p>Co-Founder </p>
+                        <p>Abhay, the co-founder of our food order website, I specialize in creating seamless digital experiences for customers, optimizing food delivery logistics, and curating a diverse range of restaurant options. My focus is on ensuring fast, reliable service, a user-friendly platform, and top-notch customer satisfaction.</p>
+                    </div>
+                </div>
+                
+                <!-- Co-founder 4 -->
+                <div class="team-member">
+                    <img src="nashedi.jpg" alt="Co-Founder 4" class="team-photo" />
+                    <div class="team-description">
+                        <h2>Ansh Dogra</h2>
+                        <p>Co-Founder </p>
+                        <p>As a Co-Founder of Fresh Feast, I've been involved in getting the business started. While my role has been more behind the scenes, I’m proud to be part of the team and continue to support the company’s growth and success.
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Fresh Feast. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript to add hover pop effect to the images (optional, for enhanced interactivity)
+        document.querySelectorAll('.team-member').forEach(member => {
+            member.addEventListener('mouseover', () => {
+                member.querySelector('.team-photo').style.transform = 'scale(1.1)';
+            });
+            member.addEventListener('mouseleave', () => {
+                member.querySelector('.team-photo').style.transform = 'scale(1)';
+            });
+        });
+    </script>
+</body>
+</html>

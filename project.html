@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fresh Feast - Delicious Food, Every Day</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <h1 style="font-family: 'Playfair Display', serif;color: #ffd700;">FRESH FEAST - Enjoy the Taste</h1>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="ORDER.HTML">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="login.html">Login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Featured Dishes Section -->
+    <section id="featured-dishes" class="featured-dishes">
+        <h2 style="font-family: 'Playfair Display'"><u> Featured Dishes</u></h2>
+        <div class="featured-dishes-container">
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="burger.jpg" alt="Delicious Burger">
+                </div>
+                <div class="dish-info">
+                    <h3>Delicious Burger</h3>
+                    <p>Juicy, tender patty with fresh toppings that explode with flavor.</p>
+                    <a href="payment.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="wp7918175-cute-thanksgiving-food-wallpapers.jpg" alt="Spicy Chicken Wings">
+                </div>
+                <div class="dish-info">
+                    <h3>Freshie's Chicken </h3>
+                    <p>Perfectly fried, crispy chicken with the right amount of spice.</p>
+                    <a href="payment.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+            <div class="dish-card">
+                <div class="dish-image">
+                    <img src="Grilled Vegetable Wrap.jpg" alt="Grilled Veggie Wrap">
+                </div>
+                <div class="dish-info">
+                    <h3>Grilled Veggie Wrap</h3>
+                    <p>A healthy, grilled vegetable wrap with a zesty dressing.</p>
+                    <a href="payment.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="offers">
+        <h2><u>Exclusive Offers</u></h2>
+        <div class="offers-container">
+            <div class="offer-card">
+                <div class="offer-image">
+                    <img src="1048636.jpg" alt="Buy 1 Get 1 Free">
+                </div>
+                <div class="offer-info">
+                    <h3>Buy 1 Get 1 Free</h3>
+                    <p>Order large value meal and get one absolutely free!</p>
+                    <a href="payment.html" class="order-button">Order now</a>
+                </div>
+            </div>
+            <div class="offer-card">
+                <div class="offer-image">
+                    <img src="1095282.jpg" alt="Free Drink on Orders Above $20">
+                </div>
+                <div class="offer-info">
+                    <h3>Free Drink on Orders Above ₹200</h3>
+                    <p>Get a free soft drink on any order above ₹200.</p>
+                    <a href="payment.html" class="order-button">Order Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions or feedback? Reach out to us!</p>
+        <a href="freshfeast123@gmail.com" class="contact-button">Email Us</a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Fresh Feast. All rights reserved.</p>
+    </footer>
+<style>
+
+    /* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #101010;
+    color: #fff;
+}
+header {
+            background: radial-gradient(circle, rgb(0, 0, 0) 0%, rgb(154, 109, 55) 100%);
+            color: white;
+            padding: 40px ;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin: 20px;
+            animation: fadeIn 2s ease-out;
+        }
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;
+    background-color: #222;
+    align-items: center;
+}
+
+.navbar  h1 {
+    font-size: 36px;
+    color: #ffd700;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-links li {
+    font-size: 18px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffd700;
+}
+
+/* Featured Dishes Section */
+.featured-dishes {
+    text-align: center;
+    padding: 60px 10%;
+    background-color: #1a1a1a;
+}
+
+.featured-dishes h2 {
+    font-size: 35px;
+    color: #ffd700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.featured-dishes-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.dish-card {
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+}
+
+.dish-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.dish-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.dish-card:hover .dish-image img {
+    transform: scale(1.1);
+}
+
+.dish-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.dish-info h3 {
+    font-size: 24px;
+    color: #ffd700;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.dish-info p {
+    font-size: 16px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.order-button {
+    padding: 12px 25px;
+    background-color: #ffd700;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #ffd700;
+}
+
+.order-button:hover {
+    background-color: #e6a900;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Offers Section */
+.offers {
+    background-color: #111;
+    padding: 60px 10%;
+    text-align: center;
+}
+
+.offers h2 {
+    font-size: 35px;
+    color: #ffd700;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Playfair Display'
+}
+
+.offers-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.offer-card {
+    background-color: #222;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    padding: 40px;
+    width: 45%;
+    text-align: center;
+    position: relative;
+}
+
+.offer-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.offer-image {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.offer-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.offer-card:hover .offer-image img {
+    transform: scale(1.1);
+}
+
+.offer-info {
+    padding: 10px;
+}
+
+.offer-info h3 {
+    font-size: 28px;
+    color: #ffd700;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.offer-info p {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.offer-info .order-button {
+    padding: 12px 25px;
+    background-color: #ffd700;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #ffd700;
+}
+
+.offer-info .order-button:hover {
+    background-color: #e6a900;
+    color: #fff;
+}
+
+
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px 10%;
+    background-color: #222;
+}
+
+.contact h2 {
+    font-size: 36px;
+    color: #ffd700;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 18px;
+    color: #bbb;
+    margin-bottom: 20px;
+}
+
+.contact-button {
+    padding: 12px 25px;
+    background-color: #ffd700;
+    color: #222;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: 2px solid #ffd700;
+}
+
+.contact-button:hover {
+    background-color: #e6a900;
+    color: #fff;
+    transform: translateY(-3px);
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    color: #bbb;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .navbar .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .navbar .nav-links li a {
+        font-size: 16px;
+    }
+
+    .featured-dishes-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dish-card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .offers-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .offer-card {
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .contact {
+        padding: 40px 5%;
+    }
+}
+
+</style>
+</body>
+
+</html>
